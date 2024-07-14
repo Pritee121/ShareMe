@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'uploader/home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the File Upload Site</h1>
+        <p><a href="{% url 'upload_file' %}">Upload a file</a></p>
+        <p><a href="{% url 'search_code' %}">Search for a file by code</a></p>
+    </div>
+</body>
+</html>

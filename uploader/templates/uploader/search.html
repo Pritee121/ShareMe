@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search File</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'uploader/search.css' %}">
+</head>
+<body>
+    <h1>Search File</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
